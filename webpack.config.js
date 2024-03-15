@@ -34,9 +34,9 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    library: {
-      type: "module",
-    },
+    library: "MyLibrary",
+    libraryTarget: "umd",
+    globalObject: "this",
   },
   experiments: {
     outputModule: true,
