@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
@@ -23,6 +24,11 @@ module.exports = {
       buffer: require.resolve("buffer/"),
     },
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      Buffer: ["buffer", "Buffer"],
+    }),
+  ],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
