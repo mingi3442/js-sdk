@@ -3,7 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.A = void 0;
 const ethereumjs_wallet_1 = __importDefault(require("ethereumjs-wallet"));
 class A {
     constructor() {
@@ -19,4 +18,3 @@ class A {
         console.log("Address : ", wallet.getPublicKeyString());
     }
 }
-exports.A = A;

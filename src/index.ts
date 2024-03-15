@@ -1,6 +1,6 @@
 import Wallet from "ethereumjs-wallet";
 
-export class A {
+class A {
   constructor() {
     console.log("A");
   }
