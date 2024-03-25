@@ -14,3 +14,5 @@ class A {
     console.log("Address : ", wallet.getPublicKeyString());
   }
 }
+
+export default A;
