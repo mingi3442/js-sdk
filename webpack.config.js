@@ -49,6 +49,7 @@ module.exports = {
   experiments: {
     outputModule: true,
   },
-
-  // devtool: "source-map",
+  devtool: false,
 };
+
+//

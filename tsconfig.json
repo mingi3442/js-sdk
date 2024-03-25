@@ -1,18 +1,35 @@
+// {
+//   "compilerOptions": {
+//     "target": "es6",
+//     "module": "CommonJS",
+//     "lib": ["es6"],
+//     "sourceMap": true,
+//     "noImplicitAny": true,
+//     "rootDir": "src",
+//     "outDir": "./dist/",
+//     "esModuleInterop": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "moduleResolution": "node",
+//     "strict": true,
+//     "allowJs": false,
+//     "skipLibCheck": true
+//   },
+//   "include": ["./src/**/*"]
+// }
+
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "module": "es6",
-    "lib": ["es6"],
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "rootDir": "src",
-    "outDir": "./dist/",
+    "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
+    "declaration": true,
+    "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "strict": true,
-    "allowJs": false,
-    "skipLibCheck": true
+    "allowSyntheticDefaultImports": true,
+    "strict": true
   },
-  "include": ["./src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
