@@ -53701,7 +53701,9 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   A: () => (/* binding */ A),
+/* harmony export */   con: () => (/* binding */ con),
+/* harmony export */   create: () => (/* binding */ create)
 /* harmony export */ });
 /* harmony import */ var ethereumjs_wallet__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ethereumjs-wallet */ "./node_modules/ethereumjs-wallet/dist.browser/index.js");
 /* harmony import */ var ethereumjs_wallet__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ethereumjs_wallet__WEBPACK_IMPORTED_MODULE_0__);
@@ -53737,16 +53739,12 @@ function create() {
   console.log("pk : ", wallet.getPrivateKeyString());
   console.log("Address : ", wallet.getPublicKeyString());
 }
-var MyLibrary = {
-  A: A,
-  con: con,
-  create: create
-};
+
 
 // A 클래스를 MyLibrary 객체의 속성으로 추가합니다.
 
 // MyLibrary 객체를 export합니다.
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyLibrary);
+// export default MyLibrary;
 })();
 
 window.MyLibrary = __webpack_exports__;
