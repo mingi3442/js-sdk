@@ -53712,9 +53712,7 @@ class A {
   constructor() {
     console.log("A");
   }
-  con() {
-    console.log("con");
-  }
+
   create() {
     console.log("create");
     const wallet = ethereumjs_wallet__WEBPACK_IMPORTED_MODULE_0___default().generate();
@@ -53722,9 +53720,20 @@ class A {
     console.log("Address : ", wallet.getPublicKeyString());
   }
 }
+function con() {
+  console.log("con");
+}
+function create() {
+  console.log("create");
+  const wallet = ethereumjs_wallet__WEBPACK_IMPORTED_MODULE_0___default().generate();
+  console.log("pk : ", wallet.getPrivateKeyString());
+  console.log("Address : ", wallet.getPublicKeyString());
+}
 
 const MyLibrary = {
   A: A,
+  con: con,
+  create: create,
 };
 
 // A 클래스를 MyLibrary 객체의 속성으로 추가합니다.
