@@ -53749,6 +53749,6 @@ var MyLibrary = {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyLibrary);
 })();
 
-exports.MyLibrary = __webpack_exports__;
+module.exports.MyLibrary = __webpack_exports__;
 /******/ })()
 ;
