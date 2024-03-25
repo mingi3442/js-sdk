@@ -1,4 +1,14 @@
-/******/ (() => { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["MyLibrary"] = factory();
+	else
+		root["MyLibrary"] = factory();
+})(this, () => {
+return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/aes-js/index.js":
@@ -53749,6 +53759,7 @@ var MyLibrary = {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyLibrary);
 })();
 
-module.exports.MyLibrary = __webpack_exports__;
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});
