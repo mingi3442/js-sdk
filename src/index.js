@@ -4,15 +4,13 @@ class A {
   constructor() {
     console.log("A");
   }
-  con(): void {
+  con() {
     console.log("con");
   }
-  create(): void {
+  create() {
     console.log("create");
     const wallet = Wallet.generate();
     console.log("pk : ", wallet.getPrivateKeyString());
     console.log("Address : ", wallet.getPublicKeyString());
   }
 }
-
-export default A;

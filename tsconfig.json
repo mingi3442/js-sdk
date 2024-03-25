@@ -1,21 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
+    "module": "es6",
     "lib": ["es6"],
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "es6",
     "rootDir": "src",
-
     "outDir": "./dist/",
-
     "esModuleInterop": true,
-
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "strict": true,
-
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true
   },
   "include": ["./src/**/*"]

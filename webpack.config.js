@@ -1,3 +1,5 @@
+const TerserPlugin = require("terser-webpack-plugin");
+
 const webpack = require("webpack");
 const path = require("path");
 
@@ -7,14 +9,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        use: "ts-loader",
+        test: /\.js$/,
         exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+          // "ts-loader"
+        },
       },
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: [".ts", ".js"],
 
     fallback: {
       crypto: require.resolve("crypto-browserify"),
@@ -41,4 +49,6 @@ module.exports = {
   experiments: {
     outputModule: true,
   },
+
+  // devtool: "source-map",
 };
