@@ -1,4 +1,3 @@
-var MyLibrary;
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -53750,6 +53749,6 @@ var MyLibrary = {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyLibrary);
 })();
 
-MyLibrary = __webpack_exports__;
+exports.MyLibrary = __webpack_exports__;
 /******/ })()
 ;

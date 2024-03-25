@@ -42,7 +42,7 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     library: "MyLibrary",
-    libraryTarget: "var",
+    libraryTarget: "commonjs",
     globalObject: "this",
   },
   experiments: {
