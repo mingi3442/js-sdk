@@ -43,7 +43,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     library: "MyLibrary",
     libraryTarget: "umd",
-    globalObject: "this",
+    // globalObject: "this",
   },
   experiments: {
     outputModule: false,

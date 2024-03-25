@@ -7,7 +7,7 @@
 		exports["MyLibrary"] = factory();
 	else
 		root["MyLibrary"] = factory();
-})(this, () => {
+})(self, () => {
 return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
