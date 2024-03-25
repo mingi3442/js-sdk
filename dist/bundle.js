@@ -53723,7 +53723,14 @@ class A {
   }
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (A);
+const MyLibrary = {
+  A: A,
+};
+
+// A 클래스를 MyLibrary 객체의 속성으로 추가합니다.
+
+// MyLibrary 객체를 export합니다.
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyLibrary);
 
 })();
 
