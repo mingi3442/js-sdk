@@ -43,11 +43,11 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     library: "MyLibrary",
-    libraryTarget: "umd",
+    libraryTarget: "var",
     globalObject: "this",
   },
   experiments: {
-    outputModule: true,
+    outputModule: false,
   },
   devtool: false,
 };
