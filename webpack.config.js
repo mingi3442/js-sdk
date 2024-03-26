@@ -39,9 +39,9 @@ module.exports = {
     }),
   ],
   output: {
-    filename: "bundle.js",
+    filename: "opus-sdk.js",
     path: path.resolve(__dirname, "dist"),
-    library: "MyLibrary",
+    library: "OpusSDK",
     libraryTarget: "window",
     // globalObject: "this",
   },
